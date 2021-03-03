@@ -11,6 +11,7 @@
 		3DB60E9D25F0407700BA7F76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB60E9C25F0407700BA7F76 /* ContentView.swift */; };
 		3DB60E9F25F0408500BA7F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB60E9E25F0408500BA7F76 /* Assets.xcassets */; };
 		3DB60EA225F0408500BA7F76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB60EA125F0408500BA7F76 /* Preview Assets.xcassets */; };
+		3DB60EAC25F040D100BA7F76 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB60EAB25F040D100BA7F76 /* LoadingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3DB60E9E25F0408500BA7F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DB60EA125F0408500BA7F76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DB60EA325F0408500BA7F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB60EAB25F040D100BA7F76 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		3DB60E9925F0407700BA7F76 /* Culminating Assingment */ = {
 			isa = PBXGroup;
 			children = (
+				3DB60EAA25F0409800BA7F76 /* LoadingScreen */,
 				3DB60E9A25F0407700BA7F76 /* Culminating_AssingmentApp.swift */,
 				3DB60E9C25F0407700BA7F76 /* ContentView.swift */,
 				3DB60E9E25F0408500BA7F76 /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				3DB60EA125F0408500BA7F76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DB60EAA25F0409800BA7F76 /* LoadingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3DB60EAB25F040D100BA7F76 /* LoadingScreen.swift */,
+			);
+			path = LoadingScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				3DB60E9D25F0407700BA7F76 /* ContentView.swift in Sources */,
 				3DB60E9B25F0407700BA7F76 /* Culminating_AssingmentApp.swift in Sources */,
+				3DB60EAC25F040D100BA7F76 /* LoadingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
