@@ -26,7 +26,7 @@ struct CustomComposableView: View {
     @State var dotOffset2 = (x: -4.95, y: -220)
     @State var dotOffset3 = (x: -4.91, y: -220)
     
-//    @State var dotTimer = 0.1
+    @State private var progressMeterOffset = CGSize.zero
     
     let timerLoading = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
     let timerLoading2 = Timer.publish(every: 0.28, on: .main, in: .common).autoconnect()
@@ -37,29 +37,11 @@ struct CustomComposableView: View {
     @State private var hue: Color = .black
     var body: some View {
     
-        
-    ZStack {
-            
-            Text("Loading")
-                .font(.subheadline)
-                .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-                .offset(x: -5, y: -220)
-
-            
-            Text("                 .")
-                .font(.subheadline)
-                .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-                .offset(x: 4, y: -220)
-
-            Text("                 .")
-                .font(.subheadline)
-                .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-                .offset(x: 11, y: -220)
-        }
-
+        Text("Just wait a second please ...")
+            .font(.subheadline)
+            .fontWeight(.bold)
+            .multilineTextAlignment(.center)
+            .offset(x: -5, y: -220)
 
 
     ZStack() {
@@ -217,41 +199,39 @@ struct CustomComposableView: View {
 
 
         }
-      
- 
         
-//        HStack {
+    
+//        VStack {
+//            ZStack {
+//                // "Fill" for progress meter; stationary
+//                Rectangle()
+//                    .frame(width: 100, height: 548 - 44, alignment: .center)
 //
-//            Text("W")
-//                .colorMultiply(.blue)
-//                .frame(width: 15, height: 20)
-//                .offset(y: shouldAnimate ? topOffset : bottomOffset)
-//                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
-//                .onAppear {
-//                    self.shouldAnimate = true
+//                // Will slide up
+//                Rectangle()
+//                    .fill(Color.primary)
+//                    .colorInvert()
+//                    .frame(width: 100, height: 548 - 44, alignment: .center)
+//                    .offset(progressMeterOffset)
+//                    .onAppear(perform: {
+//                        withAnimation(Animation.easeIn(duration: 4.0)) {
+//                            // Offset is moves the opaque rectangle up
+//                            progressMeterOffset = CGSize(width: 0, height: -1 * (548 - 44))
+//                        }
+//                    })
 //
-//                }
+//                // Sits above the rectangle that slides up (in the z-axis)
+//                // This means the rectangle sliding up will pass beneath this view
+//                Rectangle()
+//                    .fill(Color(hue: 0, saturation: 0, brightness: 0, opacity: 0))
+//                    .frame(width: 100 + 2, height: 548 - 44 + 2, alignment: .center)
+//                    .overlay(
+//                        Rectangle()
+//                            .stroke(Color.primary, lineWidth: 2)
+//                    )
 //
+//            }
 //
-//            Text("O")
-//                .colorMultiply(.green)
-//                .frame(width: 15, height: 20)
-//                .offset(y: shouldAnimate ? topOffset : bottomOffset)
-//                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
-//                .onAppear {
-//                    self.shouldAnimate = true
-//                }
-//                .offset()
-//
-//            Text("W")
-//                .colorMultiply(.red)
-//                .frame(width: 15, height: 20)
-//                .offset(y: shouldAnimate ? topOffset : bottomOffset)
-//                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
-//                .onAppear {
-//                    self.shouldAnimate = true
-//                }
-//                .offset()
 //        }
         
         }
@@ -259,7 +239,7 @@ struct CustomComposableView: View {
 }
 
 
-struct CustomComposableView_Previews: PreviewProvider {
+struct LoadingScreen_Previews: PreviewProvider {
     static var previews: some View {
         CustomComposableView()
     }
