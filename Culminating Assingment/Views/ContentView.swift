@@ -17,12 +17,10 @@ struct ListItem: Identifiable {
 struct ContentView: View {
     var body: some View {
         
-
-        
-        
+    
         NavigationView {
             
-            navigationTitle("Days Till . . .")
+            
 
             List {
                 NavigationLink(destination: DaysTillDeath()) {
@@ -38,12 +36,12 @@ struct ContentView: View {
 
                 NavigationLink(destination: DaysTillHoliday()) {
 
-                    ListItemView(title: "Days Till The Next Holoday", caption: "This gives you the days left until the next break")
+                    ListItemView(title: "Days Till The Next Holiday", caption: "This gives you the days left until the next break")
                 }
 
                 NavigationLink(destination: DaysLivedSinceBirth()) {
 
-                    ListItemView(title: "Days Passes Since Your Birth", caption: "This gives you an the days passed since your birth")
+                    ListItemView(title: "Days Passed Since Your Birth", caption: "The days passed since your birth")
                 }
 
             }
