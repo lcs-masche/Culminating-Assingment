@@ -18,38 +18,55 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
+            
             Rectangle()
-                .foregroundColor(.red)
-                .frame(width: 170, height: 35)
-                .cornerRadius(3.0)
-                .offset(x: 0, y: -220)
-                        
-            Text("Death")
-                .fontWeight(.bold)
-                .foregroundColor(Color.black)
                 .colorMultiply(.black)
-                .frame(width: 100, height: 20)
-                .offset(x: 0, y: -220)
-                .font(.title)
-                
+//                .foregroundColor(.init(red: 7, green: 238, blue: 242, opacity: 100))
+                .frame(width: 1000, height: 1000, alignment: .center)
+        
+            
+            
+        
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.red)
+                    .frame(width: 170, height: 35)
+                    .cornerRadius(3.0)
+                    .offset(x: 0, y: -200)
+                    
+                            
+                Text("Death")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .colorMultiply(.black)
+                    .frame(width: 100, height: 20)
+                    .offset(x: 0, y: -200)
+                    .font(.title)
+                    
+            }
+            
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.red)
+                    .frame(width: 170, height: 35)
+                    .cornerRadius(3.0)
+                    .offset(x: 0, y: -150)
+                            
+                Text("B-Day")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .colorMultiply(.black)
+                    .frame(width: 100, height: 20)
+                    .offset(x: 0, y: -150)
+                    .font(.title)
+                    
+            }
+        
+        
         }
         
-        ZStack {
-            Rectangle()
-                .foregroundColor(.red)
-                .frame(width: 170, height: 35)
-                .cornerRadius(3.0)
-                .offset(x: 0, y: -180)
-                        
-            Text("B-Day")
-                .fontWeight(.bold)
-                .foregroundColor(Color.black)
-                .colorMultiply(.black)
-                .frame(width: 100, height: 20)
-                .offset(x: 0, y: -180)
-                .font(.title)
-                
-        }
+        
+
 
         
         
