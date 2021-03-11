@@ -12,6 +12,7 @@
 		3DB60E9F25F0408500BA7F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB60E9E25F0408500BA7F76 /* Assets.xcassets */; };
 		3DB60EA225F0408500BA7F76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB60EA125F0408500BA7F76 /* Preview Assets.xcassets */; };
 		3DB60EB125F042D900BA7F76 /* LoadingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB60EB025F042D900BA7F76 /* LoadingScreenView.swift */; };
+		3DC9F95925FA57FF00CCFBE3 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC9F95825FA57FE00CCFBE3 /* ListItemView.swift */; };
 		3DD13D1525F6B7D200AD39C3 /* DaysTillDeath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD13D1425F6B7D200AD39C3 /* DaysTillDeath.swift */; };
 		3DD13D1825F6B80300AD39C3 /* DaysTillBDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD13D1725F6B80300AD39C3 /* DaysTillBDay.swift */; };
 		3DD13D1B25F6B81300AD39C3 /* DaysTillHoliday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD13D1A25F6B81300AD39C3 /* DaysTillHoliday.swift */; };
@@ -26,6 +27,7 @@
 		3DB60EA125F0408500BA7F76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DB60EA325F0408500BA7F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB60EB025F042D900BA7F76 /* LoadingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenView.swift; sourceTree = "<group>"; };
+		3DC9F95825FA57FE00CCFBE3 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		3DD13D1425F6B7D200AD39C3 /* DaysTillDeath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTillDeath.swift; sourceTree = "<group>"; };
 		3DD13D1725F6B80300AD39C3 /* DaysTillBDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTillBDay.swift; sourceTree = "<group>"; };
 		3DD13D1A25F6B81300AD39C3 /* DaysTillHoliday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTillHoliday.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				3DD13D1725F6B80300AD39C3 /* DaysTillBDay.swift */,
 				3DD13D1A25F6B81300AD39C3 /* DaysTillHoliday.swift */,
 				3DD13D1D25F6B83600AD39C3 /* DaysLivedSinceBirth.swift */,
+				3DC9F95825FA57FE00CCFBE3 /* ListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				3DD13D1B25F6B81300AD39C3 /* DaysTillHoliday.swift in Sources */,
 				3DB60E9D25F0407700BA7F76 /* ContentView.swift in Sources */,
 				3DB60E9B25F0407700BA7F76 /* Culminating_AssingmentApp.swift in Sources */,
+				3DC9F95925FA57FF00CCFBE3 /* ListItemView.swift in Sources */,
 				3DD13D1525F6B7D200AD39C3 /* DaysTillDeath.swift in Sources */,
 				3DD13D1825F6B80300AD39C3 /* DaysTillBDay.swift in Sources */,
 				3DD13D1E25F6B83600AD39C3 /* DaysLivedSinceBirth.swift in Sources */,

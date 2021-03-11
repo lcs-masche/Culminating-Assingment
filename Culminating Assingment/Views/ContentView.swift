@@ -13,37 +13,39 @@ struct ListItem: Identifiable {
     let summary: String
 }
 
+
 struct ContentView: View {
     var body: some View {
         
+
         
         
         NavigationView {
+            
+            navigationTitle("Days Till . . .")
+
             List {
                 NavigationLink(destination: DaysTillDeath()) {
-                    
-                    ListItem(title: "Days Till You Die",
-                             summary: "This gives you an estimate on when you will die")
+
+                ListItemView(title: "Days Till You Die", caption: "This gives you an estimate on when you will die")
                 }
                 
                 NavigationLink(destination: DaysTillBDay()) {
-                    
-                    ListItem(title: "Days Till You Die",
-                             summary: "This gives you an estimate on when you will die")
-                }
+
+                ListItemView(title: "Days Till Your B-Day", caption: "This gives you the days left until ur B-Day")
                 
+                }
+
                 NavigationLink(destination: DaysTillHoliday()) {
-                    
-                    ListItem(title: "Days Till You Die",
-                             summary: "This gives you an estimate on when you will die")
+
+                    ListItemView(title: "Days Till The Next Holoday", caption: "This gives you the days left until the next break")
                 }
-                
+
                 NavigationLink(destination: DaysLivedSinceBirth()) {
-                    
-                    ListItem(title: "Days Till You Die",
-                             summary: "This gives you an estimate on when you will die")
+
+                    ListItemView(title: "Days Passes Since Your Birth", caption: "This gives you an the days passed since your birth")
                 }
-                
+
             }
         }
     }
