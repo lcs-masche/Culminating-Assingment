@@ -25,6 +25,21 @@ struct ContentView: View {
                 .frame(width: 1000, height: 1000, alignment: .center)
         
             
+            Text("TIME TILL . . .")
+                .fontWeight(.heavy)
+                .foregroundColor(.white)
+                .colorMultiply(.white)
+                .multilineTextAlignment(.leading)
+                .offset(x: -40, y: -250)
+                .font(.largeTitle)
+            
+            Rectangle()
+                .foregroundColor(.white)
+                .opacity(0.75)
+                .frame(width: 200, height: 430)
+                .cornerRadius(10.0)
+                .offset(x: 0, y: 0)
+
             
         
             ZStack {
@@ -32,7 +47,7 @@ struct ContentView: View {
                     .foregroundColor(.red)
                     .frame(width: 170, height: 35)
                     .cornerRadius(3.0)
-                    .offset(x: 0, y: -200)
+                    .offset(x: 0, y: -180)
                     
                             
                 Text("Death")
@@ -40,7 +55,7 @@ struct ContentView: View {
                     .foregroundColor(Color.black)
                     .colorMultiply(.black)
                     .frame(width: 100, height: 20)
-                    .offset(x: 0, y: -200)
+                    .offset(x: 0, y: -180)
                     .font(.title)
                     
             }
@@ -50,19 +65,89 @@ struct ContentView: View {
                     .foregroundColor(.red)
                     .frame(width: 170, height: 35)
                     .cornerRadius(3.0)
-                    .offset(x: 0, y: -150)
+                    .offset(x: 0, y: -130)
                             
                 Text("B-Day")
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
                     .colorMultiply(.black)
                     .frame(width: 100, height: 20)
-                    .offset(x: 0, y: -150)
+                    .offset(x: 0, y: -130)
+                    .font(.title)
+                    
+            }
+            
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.red)
+                    .frame(width: 170, height: 35)
+                    .cornerRadius(3.0)
+                    .offset(x: 0, y: -80)
+                            
+                Text("Holiday")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .colorMultiply(.black)
+                    .frame(width: 100, height: 20)
+                    .offset(x: 0, y: -80)
+                    .font(.title)
+                    
+            }
+            
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.red)
+                    .frame(width: 170, height: 35)
+                    .cornerRadius(3.0)
+                    .offset(x: 0, y: -30)
+                            
+                Text("Days Lived")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .colorMultiply(.black)
+                    .frame(width: 100, height: 20)
+                    .offset(x: 0, y: -30)
+                    .font(.title)
+                    
+            }
+            
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.red)
+                    .frame(width: 170, height: 35)
+                    .cornerRadius(3.0)
+                    .offset(x: 0, y: 20)
+                            
+                Text("B-Day")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .colorMultiply(.black)
+                    .frame(width: 100, height: 20)
+                    .offset(x: 0, y: 20)
                     .font(.title)
                     
             }
         
-        
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.red)
+                    .frame(width: 170, height: 35)
+                    .cornerRadius(3.0)
+                    .offset(x: 0, y: 20)
+                            
+                Text("Year")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .colorMultiply(.black)
+                    .frame(width: 100, height: 20)
+                    .offset(x: 0, y: 20)
+                    .font(.title)
+                    
+            }
+
+            
+            
+            
         }
         
         
