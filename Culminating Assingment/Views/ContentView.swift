@@ -24,16 +24,54 @@ struct ContentView: View {
     
         VStack {
             
+            NavigationLink(destination: DaysTillDeath()) {
+                Text("Death")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .colorMultiply(.black)
+                    .frame(width: 100, height: 20)
+                    .font(.title)
+            }
+            
+            
             NavigationLink(destination: DaysTillBDay()) {
                 Text("B-Day")
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
                     .colorMultiply(.black)
                     .frame(width: 100, height: 20)
-//                    .offset(x: 0, y: -130)
                     .font(.title)
+                
+            }
+            
+
+            NavigationLink(destination: DaysTillHoliday()) {
+                Text("Holiday")
+                .fontWeight(.bold)
+                .foregroundColor(Color.black)
+                .colorMultiply(.black)
+                .frame(width: 100, height: 20)
+                .font(.title)
             }
 
+            NavigationLink(destination: OwnSetDate()) {
+                Text("Set Date")
+                .fontWeight(.bold)
+                .foregroundColor(Color.black)
+                .colorMultiply(.black)
+                .font(.title)
+            }
+            
+            NavigationLink(destination: OwnTimer()) {
+                Text("Set Timer")
+                .fontWeight(.bold)
+                .foregroundColor(Color.black)
+                .colorMultiply(.black)
+                .font(.title)
+            }
+            
+            
+            
         }
         .navigationTitle("Time Till")
         
