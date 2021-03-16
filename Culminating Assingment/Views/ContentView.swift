@@ -14,7 +14,11 @@ struct ListItem: Identifiable {
 }
 
 
+
 struct ContentView: View {
+    
+    @State private var showDetails = true
+    
     var body: some View {
         
         ZStack {
@@ -49,14 +53,23 @@ struct ContentView: View {
                     .cornerRadius(3.0)
                     .offset(x: 0, y: -180)
                     
-                            
-                Text("Death")
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                    .colorMultiply(.black)
-                    .frame(width: 100, height: 20)
-                    .offset(x: 0, y: -180)
-                    .font(.title)
+                    
+
+                
+                Button("Show details") {
+        
+                    showDetails.toggle()
+                            }
+                if showDetails {
+                    Text("Death")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black)
+                        .colorMultiply(.black)
+                        .frame(width: 100, height: 20)
+                        .offset(x: 0, y: -180)
+                        .font(.title)
+                }
+
                     
             }
             
