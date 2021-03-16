@@ -11,7 +11,10 @@ import SwiftUI
 struct Culminating_AssingmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
+
         }
     }
 }

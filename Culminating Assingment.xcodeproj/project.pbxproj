@@ -64,6 +64,7 @@
 		3DB60E9925F0407700BA7F76 /* Culminating Assingment */ = {
 			isa = PBXGroup;
 			children = (
+				3DB60E9A25F0407700BA7F76 /* Culminating_AssingmentApp.swift */,
 				3DB60EAA25F0409800BA7F76 /* LoadingScreen */,
 				3DB60EB325F0445900BA7F76 /* Views */,
 				3DB60E9E25F0408500BA7F76 /* Assets.xcassets */,
@@ -93,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				3DB60E9C25F0407700BA7F76 /* ContentView.swift */,
-				3DB60E9A25F0407700BA7F76 /* Culminating_AssingmentApp.swift */,
 				3DD13D1425F6B7D200AD39C3 /* DaysTillDeath.swift */,
 				3DD13D1725F6B80300AD39C3 /* DaysTillBDay.swift */,
 				3DD13D1A25F6B81300AD39C3 /* DaysTillHoliday.swift */,
