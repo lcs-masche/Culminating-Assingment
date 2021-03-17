@@ -73,7 +73,7 @@ struct ContentView: View {
             
             
         }
-        .navigationTitle("Time Till")
+        .navigationTitle("Home")
         
         
 //        ZStack {
