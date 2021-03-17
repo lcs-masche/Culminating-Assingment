@@ -19,6 +19,7 @@
 		3DD13D1E25F6B83600AD39C3 /* DaysLivedSinceBirth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD13D1D25F6B83600AD39C3 /* DaysLivedSinceBirth.swift */; };
 		3DF5512626013639003812C8 /* OwnSetDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5512526013639003812C8 /* OwnSetDate.swift */; };
 		3DF5512926013656003812C8 /* OwnTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5512826013656003812C8 /* OwnTimer.swift */; };
+		3DF5512E26025D82003812C8 /* TImeTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5512D26025D82003812C8 /* TImeTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3DD13D1D25F6B83600AD39C3 /* DaysLivedSinceBirth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysLivedSinceBirth.swift; sourceTree = "<group>"; };
 		3DF5512526013639003812C8 /* OwnSetDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnSetDate.swift; sourceTree = "<group>"; };
 		3DF5512826013656003812C8 /* OwnTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnTimer.swift; sourceTree = "<group>"; };
+		3DF5512D26025D82003812C8 /* TImeTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TImeTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		3DB60E9925F0407700BA7F76 /* Culminating Assingment */ = {
 			isa = PBXGroup;
 			children = (
+				3DF5512C26025D63003812C8 /* Test */,
 				3DB60E9A25F0407700BA7F76 /* Culminating_AssingmentApp.swift */,
 				3DB60EAA25F0409800BA7F76 /* LoadingScreen */,
 				3DB60EB325F0445900BA7F76 /* Views */,
@@ -107,6 +110,14 @@
 				3DF5512826013656003812C8 /* OwnTimer.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3DF5512C26025D63003812C8 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				3DF5512D26025D82003812C8 /* TImeTester.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				3DD13D1E25F6B83600AD39C3 /* DaysLivedSinceBirth.swift in Sources */,
 				3DB60EB125F042D900BA7F76 /* LoadingScreenView.swift in Sources */,
 				3DF5512626013639003812C8 /* OwnSetDate.swift in Sources */,
+				3DF5512E26025D82003812C8 /* TImeTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

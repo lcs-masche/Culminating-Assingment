@@ -24,7 +24,8 @@ struct ContentView: View {
     
         VStack {
             
-            NavigationLink(destination: DaysTillDeath()) {
+            NavigationLink(destination: DaysTillDeath()
+                            .padding(.vertical)) {
                 Text("Death")
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
@@ -43,14 +44,15 @@ struct ContentView: View {
                     .font(.title)
                 
             }
+            .padding(.vertical)
             
 
-            NavigationLink(destination: DaysTillHoliday()) {
+            NavigationLink(destination: DaysTillHoliday()
+                            .padding(.vertical)) {
                 Text("Holiday")
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
                 .colorMultiply(.black)
-                .frame(width: 100, height: 20)
                 .font(.title)
             }
 
@@ -61,6 +63,7 @@ struct ContentView: View {
                 .colorMultiply(.black)
                 .font(.title)
             }
+            .padding(.vertical)
             
             NavigationLink(destination: OwnTimer()) {
                 Text("Set Timer")
@@ -69,6 +72,7 @@ struct ContentView: View {
                 .colorMultiply(.black)
                 .font(.title)
             }
+            .padding(.vertical)
             
             
             
